@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JVG - José Villagómez</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .service-img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background-color: #f8f9fa;
+    }
+    .about-img, .creation-img {
+      width: 100%;
+      object-fit: contain;
+      max-height: 300px;
+    }
+    .star-rating {
+      font-size: 1.2rem;
+      color: #ffc107;
+    }
+    .portfolio-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      background-color: #f8f9fa;
+    }
+    .portfolio-img-1,
+    .portfolio-img-gif {
+      object-fit: contain;
+    }
+    .btn-primary {
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #333;
+      border-color: #333;
+      color: #fff;
+    }
+    .btn-outline-primary {
+      color: #000;
+      border-color: #000;
+    }
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus {
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+    }
+    #contacto .btn-outline-primary {
+      color: #000;
+      border-color: #000;
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      user-select: none;
+      text-decoration: none;
+    }
+    #contacto .btn-outline-primary:hover {
+      background-color: #000;
+      color: #fff;
+      border-color: #000;
+    }
+    .navbar .btn-contact {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #000;
+      padding: 0.375rem 0.75rem;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .navbar .btn-contact:hover,
+    .navbar .btn-contact:focus {
+      background-color: #333;
+      border-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: 767.98px) {
+      #inicio .col-md-6.text-center img {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="JVG Logo" style="height: 5rem; width: auto; object-fit: contain;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link text-dark" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#servicios">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item">
+            <a href="#contacto" class="btn-contact nav-link px-3">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="py-5" style="background-color: #f0f0f0;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <img src="./img/logo.png" alt="Logo JVG" style="height: 60px;" class="mb-4">
+          <h1 class="mb-3">Damos vida a tus ideas con animación y creatividad</h1>
+          <p class="lead mb-4">JVG es tu espacio visual para edición, ilustración y montaje 3D con propósito.</p>
+          <a href="#servicios" class="btn btn-primary me-2">Descubre más</a>
+          <a href="#contacto" class="btn btn-outline-primary">Contáctanos</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="./img/foto de perfil.jpg" alt="Visual animación JVG" class="img-fluid rounded" style="max-height: 350px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h2>Cómo se creó</h2>
+          <img src="./img/logo.png" alt="Creación de JVG" class="img-fluid rounded mb-4 creation-img">
+          <p class="lead">
+            JVG surgió a partir de una profunda pasión por la animación y el doblaje, convirtiéndose en un espacio creativo donde convergen el arte digital y la narración audiovisual.
+          </p>
+          <a href="#contacto" class="btn btn-primary mt-3">Solicitar servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <img src="./img/sobre mi marca.png" alt="José Villagómez" class="img-fluid rounded about-img">
+        </div>
+        <div class="col-12 col-md-8">
+          <p>
+            Soy José Villagómez Guzmán, tengo 22 años y soy de Santa Cruz de la Sierra, Bolivia. Apasionado por lo visual, me dedico a la edición de video y animación para contar historias con creatividad. También disfruto del fútbol y del arte en hama beads, donde combino energía y detalle. Siempre busco crecer y explorar nuevas formas de expresión.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Productos</h2>
+      <div class="row text-center">
+        <div class="col-12 col-md-4 mb-4">
+          <img src="./img/Edicion.png" alt="Edición de videos" class="img-fluid rounded mb-2 service-img">
+          <h5>Edición de videos</h5>
+          <p>Ofrecemos ediciones de video.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <img src="./img/it.png" alt="Ilustraciones" class="img-fluid rounded mb-2 service-img">
+          <h5>Ilustraciones</h5>
+          <p>Esta es una ilustración que se hizo para la portada de un libro.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <img src="./img/mobiliario 1.png" alt="Montaje 3D" class="img-fluid rounded mb-2 service-img">
+          <h5>Montaje 3D</h5>
+          <p>Un ejemplo de un mobiliario de joyas hecho en Blender.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Portafolio</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./img/portafolio 1.png" alt="Proyecto 1" class="img-fluid rounded shadow portfolio-img portfolio-img-1">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./img/portafolio 2.png" alt="Proyecto 2" class="img-fluid rounded shadow portfolio-img">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./img/portafolio 3.png" alt="Proyecto 3" class="img-fluid rounded shadow portfolio-img">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./img/portafolio 4.png" alt="Proyecto 4" class="img-fluid rounded shadow portfolio-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 mx-auto">
+          <img src="./img/devidance.gif" alt="Proyecto animado" class="img-fluid rounded shadow portfolio-img portfolio-img-gif">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Opiniones</h2>
+      <div class="row text-center">
+        <div class="col-12 col-md-4 mb-4">
+          <p>“Buenos trabajos”.</p>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <small>Daniel Medina</small>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <p>“Son muy creativos”.</p>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <small>María Claudia Guzmán</small>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <p>“Buena atención”.</p>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <small>Wilma Guzmán</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 text-center" style="background-color: #f8f9fa; color: #000;">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>Correo: villagomezguzmanjose2003@gmail.com</p>
+      <p>WhatsApp: +591 73120832</p>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3" style="background-color: #000;">
+    <p class="mb-0">© Derechos reservados José Villagómez</p>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
